@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 14 - Vida na Água e Direito em Nova Iguaçu</title>
+    <style>
+        :root {
+            --azul-foco: #004a99; /* Azul de alto contraste */
+            --dourado: #b08d4a;
+            --fundo: #ffffff;
+            --texto: #222222;
+        }
+
+        body {
+            font-family: Arial, sans-serif; /* Fonte sem serifa para melhor leitura */
+            line-height: 1.8;
+            color: var(--texto);
+            margin: 0;
+            background-color: var(--fundo);
+        }
+
+        /* Foco visível para navegação por teclado */
+        :focus {
+            outline: 3px solid var(--dourado);
+            outline-offset: 2px;
+        }
+
+        header {
+            background-color: var(--azul-foco);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .logo-principal {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h1, h2 { color: var(--azul-foco); }
+        h1 { color: white; text-transform: uppercase; }
+
+        .secao-flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+
+        .imagem-circular {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--azul-foco);
+        }
+
+        .card-metodologia {
+            background: #f0f4f8;
+            padding: 20px;
+            border-left: 5px solid var(--azul-foco);
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #e1e8ed;
+            padding: 30px;
+            text-align: center;
+            border-top: 4px solid var(--azul-foco);
+        }
+
+        /* Atalho para pular para o conteúdo principal (Acessibilidade) */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--dourado);
+            color: white;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus { top: 0; }
+    </style>
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header role="banner">
+        <img src="brazao-ods14.png" alt="Logotipo em formato de brasão com balança da justiça e figura de defensor marinho com tridente" class="logo-principal">
+        <h1>Vida na Água</h1>
+        <p>ODS 14 e Sustentabilidade em Nova Iguaçu</p>
+    </header>
+
+    <main id="conteudo-principal" role="main">
+        
+        <section aria-labelledby="titulo-contexto">
+            <h2 id="titulo-contexto">Contexto em Nova Iguaçu</h2>
+            <div class="secao-flex">
+                <div style="flex: 1; min-width: 300px;">
+                    <p>Embora não seja costeira, Nova Iguaçu possui <strong>sete rios essenciais</strong> que deságuam em ambientes marinhos. A preservação local impacta diretamente a saúde dos oceanos.</p>
+                </div>
+                <img src="rio-local.png" alt="Vista aérea de um rio cercado por floresta em Nova Iguaçu" class="imagem-circular">
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-metodologia">
+            <h2 id="titulo-metodologia">Nossa Metodologia</h2>
+            <div class="card-metodologia">
+                <h3>Artigo Científico e Educação</h3>
+                <p>Implementação de cartilhas educativas e artigos científicos para conscientizar sobre o Direito Ambiental e a proteção dos recursos hídricos.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>JUNTE-SE A NÓS!</strong></p>
+        <p>Contribua para um futuro sustentável. Proteja a água, preserve a vida!</p>
+        <img src="mascote.png" alt="Ilustração de uma criança segurando o globo terrestre e uma gota d'água sorridente" style="max-width: 100px;">
+    </footer>
+
+</body>
+</html>
